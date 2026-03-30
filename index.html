@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>HybridSphere: Enhancing Hybrid Meetings with Avatar-Based VR Environments</title>
+    <meta name="description" content="Project page for 'HybridSphere: Enhancing Hybrid Meetings with Avatar-Based VR Environments' (IEEE TVCG)." />
+    <link rel="icon" href="assets/favicon.png"/>
+    <link rel="stylesheet" href="assets/academicons-1.9.4/css/academicons.min.css">
+    <link rel="stylesheet" href="assets/css/import.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <header class="wrap">
+        <div class="pub">IEEE Transactions on Visualization and Computer Graphics (TVCG) Special Issue IEEE VR 2026</div>
+        <h1>HybridSphere: Enhancing Hybrid Meetings with Avatar-Based VR Environments</h1>
+        <p class="authors">Koji Momota<sup>1</sup>, Shizuka Shirai<sup>1</sup>, Masato Kobayashi<sup>1</sup>, Naoya Chiba<sup>1</sup>,  Photchara Ratsamee<sup>2</sup>, Kiyoshi Kiyokawa<sup>3</sup>, Yuki Uranishi<sup>1</sup><br>
+          <sup>1</sup>The University of Osaka
+          <sup>2</sup>Kansai University
+          <sup>3</sup>Nara Institute of Scienceand Technology
+        </p>
+        <p style="margin-top: 12px;">
+            <a class="btn" href="https://doi.org/10.1109/TVCG.2025.3620419" target="_blank"><i class="ai ai-ieee"></i> Xplore (TBA)</a>
+            <a class="btn" href="https://hdl.handle.net/11094/102824" target="_blank"><i class="fas fa-file-pdf"></i> PDF (TBA)</a>
+            <a class="btn" href="#bibtex"><i class="fas fa-book"></i> BibTeX (TBA)</a>
+        </p>
+        <figure id="teaser">
+            <img class="teaser" src="assets/teaser.png" alt="HybridSphere"/>
+            <div class="center">
+                <figcaption class="teaser">
+                  HybridSphere is a hybrid meeting system that allows remote participants to wear head-mounted displays and experience the meeting environment immersively through avatars representing local participants in a virtual space. Thus, the proposed method ddresses the issue that hybrid meetings often result in unequal spatial and nonverbal information distribution.  
+                </figcaption>
+            </div>
+        <figure>
+    </header>
+    
+    <section id="abstract" class="bg">
+      <h2>Abstract</h2>
+      <div class="wrap">
+          <p>
+            With recent advances in information and communication technologies, Hybrid meetings, where local attendees are physically present and remote participants join virtually, have become increasingly common. However, remote participants often experience reduced contextual awareness and a sense of isolation. To address these issues, we propose HybridSphere, a hybrid meeting system that reconstructs a shared virtual reality environment for remote participants. The system employs a 360-degree camera and pose estimation to generate real-time avatar representations of local attendees to allow remote users with head-mounted displays to experience the meeting as if all participants are in the same virtual space. We conducted a user study comparing HybridSphere to a baseline condition in which remote participants viewed an unmodified 360-degree video. Although the avatars were rated lower in perceived trustworthiness and likability due to limited visual fidelity, participants appreciated the seated-6DoF function. These results suggest that immersive and spatially flexible VR representations can enhance remote engagement in hybrid meetings.
+          </p>
+      </div>
+    </section>
+
+   
+
+    <section id="bibtex">
+      <h2>BibTeX</h2>
+      <div class ="wrap">
+      <div class="code-container">
+          <button class="copy-btn tooltip" onclick="copyBibTex()"><i class="fas fa-copy"></i><span class="tooltiptext">Copy</span></button>
+          <code class="bib" id="bibtex-code">
+              @ARTICLE{11202441,
+                author={Momota, Koji and Shirai, Shizuka and Kobayashi, Masato and Chiba, Naoya and Ratsamee, Photchara and Kiyokawa, Kiyoshi and Uranishi, Yuki},
+                journal={IEEE Transactions on Visualization and Computer Graphics}, 
+                title={HybridSphere: Enhancing Hybrid Meetings with Avatar-Based VR Environments}, 
+                year={2026},
+                volume={},
+                number={},
+                pages={},
+                doi={}}
+              
+      </code>
+      </div>
+      </div>
+    </section>
+
+    <footer>
+      © 2026 Integrated Media Environment Lab (Uranishi Lab), The University of Osaka • Contact:shizuka.shirai.cmc[at]osaka-u.ac.jp</a>
+    </footer>
+
+  <script>
+      function copyBibTex() {
+        const code = document.getElementById('bibtex-code').innerText;
+        navigator.clipboard.writeText(code).then(() => {
+          const tooltip = document.querySelector('.tooltiptext');
+          tooltip.textContent = 'Copied!';
+          setTimeout(() => tooltip.textContent = 'Copy', 1500);
+        });
+      }
+    </script>
+</body>
+</html>
